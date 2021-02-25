@@ -1,11 +1,15 @@
+import React, { Component } from "react";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-     <h1>Hi, I'm a React App!</h1>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return React.createElement('div', {className: 'App'}, React.createElement('h1', null,  'Does this work now'))
+  // (
+  //   <div className="App">
+  //    <h1>Hi, I'm a React App!</h1>
+  //   </div>
+  // );    
+  }
 }
 
 export default App;
@@ -14,3 +18,5 @@ export default App;
 // react - has one method, the render method
 //         react will call this method to render something to the screen 
 //         every react component has to render some html code which can be rendered to the dom to the screen, can do other things but the basic is to return some html code
+
+// using React.createElement
